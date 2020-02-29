@@ -22,5 +22,33 @@ class LifecycleLogActivity : AppCompatActivity() {
 		}
 	}
 
-	// TODO: Add further implementions of onX-methods.
+	override fun onStart() {
+		super.onStart()
+
+		Log.i("hslu_mobApp", "Activity onStart() aufgerufen")
+	}
+
+	override fun onRestart() {
+		super.onRestart()
+
+		Log.i("hslu_mobApp", "Activity onRestart() aufgerufen")
+	}
+
+	override fun onResume() {
+		super.onResume()
+
+		Log.i("hslu_mobApp", "Activity onResume() aufgerufen")
+	}
+
+	override fun onPause() {
+		super.onPause()
+
+		Log.i("hslu_mobApp", "Activity onPause() aufgerufen")
+	}
+
+	override fun onDestroy() {
+		super.onDestroy()
+
+		Log.i("hslu_mobApp", "Activity onDestroy() aufgerufen")
+	}
 }
